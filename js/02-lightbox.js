@@ -22,13 +22,15 @@ const lightbox = new SimpleLightbox(".gallery a", {
   captionDelay: 250,
 });
 
-function handleClickOnImg(event) {
-  event.preventDefault();
-  if (!event.target.classList.contains("gallery__image")) {
-    return;
-  }
+lightbox.open();
 
-  lightbox.open();
-}
+// function handleClickOnImg(event) {
+//   event.preventDefault();
+//   if (!event.target.classList.contains("gallery__image")) {
+//     return;
+//   }
+
+//   lightbox.open();
+// }
 
 galleryEl.addEventListener("click", handleClickOnImg);
