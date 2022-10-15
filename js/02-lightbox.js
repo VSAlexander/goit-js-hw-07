@@ -22,8 +22,6 @@ const lightbox = new SimpleLightbox(".gallery a", {
   captionDelay: 250,
 });
 
-lightbox.open();
-
 // function handleClickOnImg(event) {
 //   event.preventDefault();
 //   if (!event.target.classList.contains("gallery__image")) {
@@ -34,3 +32,5 @@ lightbox.open();
 // }
 
 galleryEl.addEventListener("click", handleClickOnImg);
+
+lightbox.open();
